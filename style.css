@@ -90,7 +90,7 @@ ul>li>a::after{
 .hero{
     width: 100%;
     height: 90vh;
-    background: linear-gradient(135deg,rgba(112, 110, 110,0.3),rgba(112, 110, 110,0.3)),url('images/hero.jpg');
+    background: linear-gradient(135deg,rgba(54, 54, 54, 0.5),rgba(56, 56, 56, 0.5)),url('images/hero.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -230,13 +230,13 @@ ul>li>a::after{
 
 
 /* Portfolio */
-.portfolio,.services{
+.portfolio,.services,.process{
     width: 100%;
     height: fit-content;
     background: lavender;
     padding: 20px;
 }
-.portfolio h1,.services h1{
+.portfolio h1,.services h1,.process>h1{
     width: fit-content;
     text-align: center;
     margin:25px;
@@ -288,10 +288,62 @@ ul>li>a::after{
     color: #333;
 }
 
+/* process */
+.process{
+    background: #fff;
+}
+.cycle{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    padding: 20px;
+    position: relative;
+}
+
+.stage,#idea{
+    width: fit-content;
+    height: fit-content;
+    padding: 15px;
+    border: 2px solid green;
+    max-width: 400px;
+    word-wrap: break-word;
+    border-radius: 20px;
+}
+
+#idea{
+    margin:20px auto;
+    color: #fff;
+    background: green;
+}
+
+#ft{
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+.mid{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.last{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    align-items: center;
+}
+.last>.stage{
+    margin:0 20px;
+}
+
 /* footer */
 footer{
-    background: #fff;
-    color: #333;
+    background: #333;
+    color: #fff;
     padding: 10px;
 
 }
@@ -300,6 +352,7 @@ footer .icons{
     margin: auto;
     display: flex;
     justify-content: space-evenly;
+    color: #fff;
 }
 footer .icons>li{
     list-style: none;
@@ -308,6 +361,14 @@ footer .icons>li{
 footer .f-logo{
     text-align: center;
     margin: 20px;
+    border: 2px solid #0569c7;
+    border-radius: 10px;
+    background: #fff;
+    color: #333;
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    margin:20px auto;
 }
 
 hr{
@@ -327,11 +388,13 @@ hr{
     flex-direction: column;
 }
 .f-cont p{
-    color: #252525;
+    color: #fff;
 }
 
 #title{
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .f-cont span{
     width: 20px;
@@ -348,8 +411,10 @@ footer ul li{
     margin: 0;
 }
 footer ul li a{
-    color: #252525;
+    color: #fff;
     text-decoration: none;
+    margin: 0;
+    padding: 5px;
 
 }
 
